@@ -5,11 +5,9 @@ http://www.bootstrapzero.com
 
 */
 
-@import url(https://fonts.googleapis.com/css?family=Questrial);
-@import url(https://fonts.googleapis.com/css?family=PT+Sans:400italic);
+ @import url('https://fonts.googleapis.com/css?family=Titillium+Web');
 
 html{
-  background:url('imag/web-bkgnd.jpg')no-repeat;
   background-size: cover;
   height: 140px;
   display:block;
@@ -24,8 +22,7 @@ body {
 }
 
 body {
-    font-family: 'Questrial','Helvetica Neue',Arial,sans-serif;
-    background-color: white;
+    font-family: 'Titillium Web', sans-serif;
     color: white;
     webkit-tap-highlight-color: #222;
 }
@@ -58,15 +55,15 @@ a:focus {
 }
 
 h1 {
-  font-family: 'Questrial','Helvetica Neue',Arial,sans-serif;
+  font-family: 'Titillium Web', sans-serif;
 }
 
 h2 {
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'Titillium Web', sans-serif;
 }
 
 h3,h4,h5,h6 {
-    font-family: 'Questrial','Helvetica Neue',Arial,sans-serif;
+  font-family: 'Titillium Web', sans-serif;
 }
 
 p {
@@ -90,16 +87,6 @@ p {
 .icon-lg {
     font-size: 50px;
     line-height: 18px;
-}
-
-.bg-primary {
-    background-color: #333;
-    background-image: url(https://dl.dropboxusercontent.com/u/31137144/the_love_story/img/bkgnd-img.png);
-}
-
-.bg-dark {
-    color: #eee;
-    background-color: #222;
 }
 
 .bold {
@@ -141,7 +128,7 @@ footer {
 
 .navbar-default {
     border-color: rgba(35,35,35,.05);
-    font-family: 'Questrial','Helvetica Neue',Arial,sans-serif;
+    font-family: 'Titillium Web', sans-serif;
     background-color: #222;
     -webkit-transition: all .4s;
     -moz-transition: all .4s;
@@ -149,7 +136,7 @@ footer {
 }
 
 .navbar-header > .navbar-brand {
-    font-family: 'Questrial','Helvetica Neue',Arial,sans-serif;
+    font-family: 'Titillium Web', sans-serif;
     color: #9c27b0;
     padding: 15px;
     -webkit-transition: padding .2s ease-in;
@@ -261,7 +248,7 @@ header {
     color: #fff;
     width: 100%;
     background-color: #c9c9c9;
-    background-image: url(https://dl.dropboxusercontent.com/u/31137144/the_love_story/img/bkgnd-img.png);
+    background-image: url('../img/bkgnd-img.png');
     background-position: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -486,108 +473,50 @@ textarea {
     padding-left: 0;
 }
 
-.btn-default {
-    border-color: #fff;
-    color: #222;
-    background-color: #fff;
-    -webkit-transition: all .35s;
-    -moz-transition: all .35s;
-    transition: all .35s;
-}
-
-.btn-default:hover,
-.btn-default:focus,
-.btn-default.focus,
-.btn-default:active,
-.btn-default.active,
-.open > .dropdown-toggle.btn-default {
-    border-color: #ededed;
-    color: #222;
-    background-color: #f2f2f2;
-    opacity: 0.7;
-}
-
-.btn-default:active,
-.btn-default.active,
-.open > .dropdown-toggle.btn-default {
-    background-image: none;
-}
-
-.btn-default.disabled,
-.btn-default[disabled],
-fieldset[disabled] .btn-default,
-.btn-default.disabled:hover,
-.btn-default[disabled]:hover,
-fieldset[disabled] .btn-default:hover,
-.btn-default.disabled:focus,
-.btn-default[disabled]:focus,
-fieldset[disabled] .btn-default:focus,
-.btn-default.disabled.focus,
-.btn-default[disabled].focus,
-fieldset[disabled] .btn-default.focus,
-.btn-default.disabled:active,
-.btn-default[disabled]:active,
-fieldset[disabled] .btn-default:active,
-.btn-default.disabled.active,
-.btn-default[disabled].active,
-fieldset[disabled] .btn-default.active {
-    border-color: #fff;
-    background-color: #fff;
-    opacity: 0.7;
-}
-
-.btn-default .badge {
-    color: #fff;
-    background-color: #222;
-}
-
-.btn.btn-primary {
-    background-color: transparent;
-    border:2px solid #9c27b0;
-    border-color:#9c27b0;
-    -webkit-transition: all .35s;
-    -moz-transition: all .35s;
-    transition: all .35s;
-}
-
-.btn.btn-primary:hover {
-    background-color: #9c27b0;
-    font-weight: bolder;
+.btn-primary {
+    font-family: 'Titillium Web', sans-serif;
+    position: relative;
+    height: 45px;
+    width: 150px;
+    margin: 10px 7px;
+    padding: 7px 7px;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 2px;
     color: white;
-    opacity: 0.7;
+    border:3px solid #9c27b0;
+    border-radius: 10px;
+    outline: 0;
+    overflow: hidden;
+    background: none;
+    z-index: 1;
+    cursor: pointer;
+    transition: 0.1s ease-in;
+    -o-transition: 0.1s ease-in;
+    -ms-transition: 0.1s ease-in;
+    -moz-transition: 0.1s ease-in;
+    -webkit-transition: 0.1s ease-in;
 }
 
-.btn {
-    border: 0;
-    border-radius: 290px;
-    font-family: 'Helvetica Neue',Arial,sans-serif;
+.btn-primary:hover {
+    color: whitesmoke;
+    //font-weight: bolder;
+    background: #9c27b0;
+    border:3px solid #9c27b0;
 }
 
-.btn-xl {
-    padding: 15px 30px;
-    font-size: 20px;
+.btn-primary:before {
+  content: "";
+  position: absolute;
+  background: #9c27b0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 100%;
+  z-index: -1;
+  -webkit-transition: top 0.1s ease-in;
 }
 
-::-moz-selection {
-    text-shadow: none;
-    color: #fff;
-    background: #222;
-}
-
-::selection {
-    text-shadow: none;
-    color: #fff;
-    background: #222;
-}
-
-img::selection {
-    color: #fff;
-    background: 0 0;
-    background-image: url(https://dl.dropboxusercontent.com/u/31137144/the_love_story/img/bkgnd-img.png);
-}
-
-img::-moz-selection {
-    color: #fff;
-    background: 0 0;
-    background-image: url(https://dl.dropboxusercontent.com/u/31137144/the_love_story/img/bkgnd-img.png);
+.btn-primary:hover:before {
+  top: 0;
 }
